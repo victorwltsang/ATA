@@ -1,0 +1,539 @@
+* {
+	padding:0;
+	margin: 0;
+}
+
+body {
+	background-color: #FFF;
+	background-repeat: repeat;
+	background-image: url(../img/bg.png);
+}
+
+#menu{
+	width: 100%;
+	height: 78px;
+	background-image: url(../img/menu_bg.png);
+	background-repeat: repeat-x;
+}
+
+
+#main{
+	width: 900px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+#container{
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	background-color: #FFF;
+	border: 3px solid #FFF;
+}
+
+#header{
+	height: 80px;
+	width: 100%;
+	background-image: url(../img/top_bg.png);
+	background-repeat: repeat-x;
+}
+
+
+#header_ob1{
+	height: 60px;
+	width: 600px;
+	margin-left: 20px;
+	padding-top: 10px;
+
+}
+
+
+#content{
+	margin-top: 5px;
+	height: auto;
+	width: auto;
+	
+}
+
+#promo{
+	height: auto;
+	width: 100%;
+}
+
+#contact{
+	height: auto;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+
+table.contact{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: auto;
+	width: auto;
+	margin-left: 20px;
+}
+
+table.contact td.head{
+	text-shadow:1px 1px 1px #999;
+	font-size:18px;
+	height: 35px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+
+}
+
+h1{
+	text-shadow:1px 1px 1px #999;
+	font-size:18px;
+	height: 35px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	font-weight: normal;
+
+}
+
+table.contact td.main{
+	font-size: 17px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	text-transform: capitalize;
+	padding-right: 30px;
+	vertical-align: top;
+
+}
+
+table.contact td.sub{
+	font-size: 17px;
+	line-height: 17px;
+	padding-bottom: 25px;
+	padding-left: 30px;
+
+}
+
+#warranty{
+	height: auto;
+	width: 100%;
+}
+
+#faq{
+	height: auto;
+	width: 100%;
+}
+
+table.faqlist{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: auto;
+	width: 100%;
+}
+
+table.faqlist td.topic{
+	color: #740000;
+	font-size: 17px;
+	line-height: 17px;
+	padding-bottom: 15px;
+
+}
+
+table.faqlist td.main{
+	font-size: 17px;
+	line-height: 17px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	padding-top: 10px;
+
+}
+
+table.faqlist td.sub{
+	font-size: 17px;
+	line-height: 17px;
+	padding-bottom: 25px;
+	padding-left: 30px;
+
+}
+
+table.faqlist td.backtop{
+	font-size: 17px;
+	line-height: 17px;
+	padding-bottom: 25px;
+	padding-left: 30px;
+
+}
+
+
+#itemheader{
+	height: auto;
+	width: 100%;
+}
+
+#products{
+	margin-top: 5px;
+	height: auto;
+	width: 100%;
+}
+
+#gallery{
+	height: auto;
+	width: 100%;
+}
+
+#headline{
+	margin-top: 20px;
+	height: auto;
+	width: auto;
+	background-image: url(../img/headline.png);
+	background-repeat: repeat-x;
+	color: #FFF;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+
+table.prods {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: auto;
+	width: 100%;
+
+
+}
+
+table.prods td.type1{
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+table.prods td.type2{
+	border: 1px solid #3B3D41;
+	background-color: #000;
+}
+
+table.prods td.spacer{
+	width: 5px;
+}
+
+table.prods td.itemhead{
+	font-size:16px;
+	height: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+table.prods td.itemword{
+	font-size:14px;
+	height: 35px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	color: #000;
+	line-height: 20px;
+	vertical-align: top;
+	
+}
+
+table.warrant{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: auto;
+	width: 100%;
+}
+
+table.warrant td.main{
+	text-shadow:1px 1px 1px #999;
+	font-size:17px;
+	height: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	
+}
+
+table.warrant td.sub{
+	font-size:15px;
+	height: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 25px;
+	
+}
+table.warrant td.word{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 25px;
+	font-size: 15px;
+	line-height: 15px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	
+}
+table.afia{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: auto;
+	width: 100%;
+	margin-top: 25px;
+}
+
+table.afia td.people{
+	font-size:17px;
+	height: 35px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	padding-bottom: 5px;
+}
+
+table.afia td.refer{
+	font-size:17px;
+	height: 35px;
+	text-align: left;
+	text-decoration: none;
+	line-height: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	padding-bottom: 15px;
+}
+ol.word{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 25px;
+	font-size: 15px;
+	line-height: 15px;
+	padding-right: 25px;
+}
+
+
+table.gallery{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: auto;
+	width: 100%;
+}
+
+table.gallery td.main{
+	text-shadow:1px 1px 1px #999;
+	font-size:17px;
+	height: 35px;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	
+}
+
+
+
+
+	
+#footad{
+	height: auto;
+	width: 100%;
+	
+}
+
+table.footee{
+	font-size:16px;
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	color: #740000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+table.footee td.ad1{
+	width: 100%;
+	text-align: left;
+}
+
+table.footee td.ad2{
+	text-align: right;
+	white-space: nowrap;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #333;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+table.footee td.ad3{
+	text-align: right;
+	white-space: nowrap;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+table.footee td.adend{
+	text-align: center;
+}
+
+table.footee td.design{
+	padding-top:50px;
+	text-align: center;
+}
+table.nerfstock{
+	width: 100%;
+	
+}
+
+table.nerfstock tr.rhead{
+	color: #FFF;
+	background-color: #720000;
+	
+}
+
+table.nerfstock tr.lhead{
+	color: #720000;
+	font-weight: bold;
+	
+}
+
+table.nerfstock tr.rdata{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #000;
+	background-color: #F8F8F8;
+}
+
+table.nerfstock td.rdata{
+	color: #000;
+	background-color: #F8F8F8;
+}
+
+
+table.nav {
+	width: 100%;
+	color: #FFF;
+	font-size:12px;
+	height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow:1px 1px 1px #333;
+	font-weight: bold;
+	line-height: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top-color: #b80000;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+table.nav td.special2{
+	min-width:50px;
+
+}
+
+table.nav td.special3{
+	min-width:50px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #b80000;
+}
+
+table.nav a:hover{
+}
+
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a.topic:link {
+	color: #740000;
+	text-decoration: none;
+}
+
+a.topic:visited {
+	color: #740000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+	
+}
+
+a.foot:link{
+	color: #740000;
+	text-decoration: none;
+
+	
+}
+a.foot:visited{
+	color: #740000;
+	text-decoration: none;
+
+}
+
+ul.faq {
+	padding-left: 25px;
+}
+
+ul.productcase {
+	padding-left: 25px;
+	font-size: 17px;
+	text-transform: capitalize;
+}
+
+.itemword{
+	padding-left: 15px;
+	font-size: 17px;
+	text-transform: capitalize;
+	
+}
+.textword{
+	padding-left: 15px;
+	font-size: 17px;
+	text-transform: capitalize;
+	padding-bottom: 20px;
+	
+}

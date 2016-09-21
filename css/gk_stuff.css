@@ -1,0 +1,311 @@
+/*
+ #------------------------------------------------------------------------
+ # memovie - February 2010 (for Joomla 1.5)
+ #
+ # Copyright (C) 2007-2010 Gavick.com. All Rights Reserved.
+ # License: Copyrighted Commercial Software
+ # Website: http://www.gavick.com
+ # Support: support@gavick.com   
+ #------------------------------------------------------------------------ 
+ # Based on T3 Framework
+ #------------------------------------------------------------------------
+ # Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ # @license - GNU/GPL, http://www.gnu.org/copyleft/gpl.html
+ # Author: J.O.O.M Solutions Co., Ltd
+ # Websites: http://www.joomlart.com - http://www.joomlancers.com
+ #------------------------------------------------------------------------
+ */
+/*
+ * Menu
+ */
+.gk_menu, 
+.gk-megamenu, 
+.gk-megamenu>li, 
+.gk-megamenu>ul>li, 
+.gk-megamenu>li>a, 
+.gk-megamenu>ul>li>a, 
+.gk_menu>li, 
+.gk_menu>ul>li, 
+.gk_menu>li>a, 
+.gk_menu>ul>li>a{padding:0; margin:0; border:0}
+.gk_menu>ul, 
+.gk-megamenu{border-top:1px solid #3a5676}
+#gk-splitmenu, 
+#gksdl-mainnav{overflow:hidden; border-bottom:1px solid #3e5978}
+.gk-megamenu ul.level0>li, 
+.gk_menu>li, 
+.gk_menu>ul>li{padding:7px 20px; border-top:1px solid #3a5676; position:relative; top:-1px; background:transparent url('../images/style1/menu_bullet.png') no-repeat 100% 0}
+.gk_menu li.active a{color:#b10000}
+.gk-megamenu ul.level0>li>a .gk_menu>li>a, 
+.gk_menu>ul>li>a{overflow:hidden; color:#ccc}
+.gk-megamenu ul.level0>li>a>span, 
+.gk_menu>li>a>span, 
+.gk_menu>ul>li>a>span{display:block; height:13px; line-height:13px; font-weight:normal; color:#fff; text-transform:uppercase; text-shadow:1px 1px 1px #333; font-size:79%; font-weight:bold}
+.gk-megamenu ul.level0>li>a>span.menu-desc, 
+.gk_menu>li>a>span.menu-desc, 
+.gk_menu>ul>li>a>span.menu-desc{height:14px; line-height:14px; color:#a5c0dc}
+.gk-megamenu ul.level0>li li span.menu-desc, 
+.gk_menu>li li span.menu-desc, 
+.gk_menu>ul>li li span.menu-desc{display:none!important}
+ul.level0>li.mega>.mega>span.menu-desc, 
+.gk_menu>li>a>span.menu-desc, 
+.gk_menu>ul>li>a>span.menu-desc{display:block; background:none!important; font-weight:normal; font-size:60%}
+.gk_menu li ul{color:#ccc!important; border:1px solid #e4e4e4!important; background:#eee!important; padding:16px!important}
+.gk_menu li li>ul{margin-top:-25px!important}
+#gksdl-subnav ul{width:auto}
+.gk_menu li ul li{height:25px!important; line-height:25px!important; margin:5px 0 0 0!important; border:0!important}
+.gk_menu li ul span{display:block}
+.gk_menu li ul a{border:0!important; color:#3b3b3b!important; font-weight:bold!important; display:block!important; width:100%; height:24px!important; line-height:24px!important; padding:0 7px!important; font-size:65%!important; text-transform:uppercase!important; background:#484848 url('../images/style1/submenu_bg.png') no-repeat 0 top!important}
+.gk_menu li ul a:hover{background-position:right bottom!important; background-color:#b80000!important; color:#fff!important}
+.gk-megamenu>ul.level0>li:hover, 
+.gk-megamenu>ul.level0>li.active, 
+.gk_menu>li:hover, 
+.gk_menu>li.active, 
+.gk_menu>ul>li:hover, 
+.gk_menu>ul>li.active{border-top:1px solid #233140; position:relative; top:-1px}
+.gk_menu li a.active, 
+.gk_menu li a.active:hover, 
+.gk_menu li a.active:active, 
+.gk_menu li a.active:focus, 
+.gk_menu ul li a.active, 
+.gk_menu ul li a.active:hover, 
+.gk_menu ul li a.active:active, 
+.gk_menu ul li a.active:focus{background:none !important; color:#b10000; font-weight:bold}
+/* only megamenu */
+.gk-megamenu a.mega{color:#ccc}
+.gk-megamenu a.mega:hover{color:#fff}
+.gk-megamenu ul.level1 li.mega a.mega{border:0; color:#3b3b3b; font-weight:bold; display:block; height:25px; line-height:25px; padding:0 7px; font-size:65%; text-transform:uppercase; margin:5px 0 0 0; background:#484848 url('../images/style1/submenu_bg.png') no-repeat 0 top}
+.gk-megamenu ul.level1 li.mega a.mega:hover{background-position:right bottom; color:#fff}
+.gk-megamenu .childcontent-inner-wrap{color:#3b3b3b!important; border:1px solid #e4e4e4!important; background:#eee!important; padding:16px!important}
+.gk-megamenu .childcontent .gk-moduletable a:hover, 
+.gk-megamenu .childcontent .gk-moduletable a:focus, 
+.gk-megamenu .childcontent .gk-moduletable a:active{color:#fff; text-decoration:none}
+.gk-megamenu .childcontent .gk-moduletable a{color:#3b3b3b; text-decoration:none; border-bottom:1px dotted #ccc}
+.gk-megamenu .childcontent .gk-moduletable{color:#ccc; border-bottom:0; line-height:1.5; margin:10px 0; padding:0}
+.gk-megamenu .childcontent .gk-moduletable h3{background:none; color:#fff; border-bottom:1px dotted #444; margin-left:10px; margin-right:10px; text-indent:5px; text-transform:none}
+.gk-megamenu .group .moduletable h3, 
+.gk-megamenu .group-title .menu-title{color:#fff; text-transform:uppercase; font-weight:bold; height:25px; line-height:25px; margin:0 3px; padding:0 8px!important; background:#484848 url('../images/style1/submenu_bg.png') no-repeat right bottom!important}
+.gk-megamenu .group .moduletable h3{color:#3b3b3b; margin:10px 9px; font-size:65%!important; background:#fff url('../images/style1/submenu_bg.png') no-repeat 0 bottom!important}
+.gk-megamenu .group-title .menu-desc{color:#777; font-size:80%; padding-left:0 !important; height:10px; line-height:15px}
+.gk-megamenu .group .moduletable h3{background:none; font-size:80%; padding:10px 0}
+/* 
+ * Main Nav
+ */
+#gk-mainnav{line-height:1; position:relative; z-index:99; background:transparent url('../images/style1/menu_bg.png') repeat-x 0 0; font-size:120%}
+/* 
+ * Sub Nav
+ */
+#gk-subnav{position:relative; height:32px; z-index:99; background:#727b83; margin:0 4px; font-size:90%; border-top:1px solid #6c747c}
+#gk-subnav .menu-desc{display:none!important}
+#gk-subnav .main{line-height:1; z-index:100}
+#gk-subnav ul{background:none; overflow:hidden; height:32px; line-height:32px; padding:0 0 0 8px}
+#gk-subnav ul.active{background:none}
+#gk-subnav li{display:block; float:left; padding:0 0 0 11px; height:32px; line-height:32px}
+#gk-subnav ul li a span{border-left:1px solid #87919a; padding-left:10px}
+#gk-subnav ul li:first-child a span{border-left:none; padding-left:0}
+#gk-subnav li.first-item{border-left:0; background:none!important}
+#gk-subnav ul li a{color:#fff; display:block; text-decoration:none; text-transform:uppercase}
+#gk-subnav ul li.active a, 
+#gk-subnav ul li.active a:hover, 
+#gk-subnav ul li.active a:active, 
+#gk-subnav ul li.active a:focus{color:#fff!important}
+#gk-subnav ul ul li{font-size:120%}
+#gk-subnav ul.active li a{color:#fff}
+#gk-subnav ul.active li a:hover, 
+ul#gk-subnav>li a:hover, 
+#gk-subnav ul li a:hover{color:#2d353c}
+#gk-subnav ul li.empty{visibility:hidden}
+/* 
+ * Sub Nav (lv2)
+ */
+#gk-subnav ul ul li a span{border:none; padding-left:6px}
+#gk-subnav ul li ul{display:block; height:auto; left:-999em; padding:0; position:absolute; width:200px}
+#gk-subnav ul li.hover ul{display:block; height:auto; left:auto; position:absolute; margin-top:3px; margin-left:5px}
+#gk-subnav ul li.haschild a:hover{background:none}
+#gk-subnav ul li.haschild li a, 
+#gk-subnav ul li.hover li a{background:none; padding-right:0}
+#gk-subnav ul li ul{color:#ccc; border:1px solid #e4e4e4; background:#eee; padding:16px}
+#gk-subnav ul li ul li{border:none; display:block; float:none; overflow:hidden; padding:0; text-align:left}
+#gk-subnav ul li li a span{padding-left:6px!important}
+#gk-subnav ul li ul li a{border:0!important; color:#3b3b3b!important; font-weight:bold!important; display:block!important; width:100%; height:25px!important; line-height:25px!important; font-size:75%!important; text-transform:uppercase!important; background:#484848 url('../images/style1/submenu_bg.png') no-repeat 0 top!important}
+#gk-subnav ul li ul li a:hover{background-position:right bottom!important; color:#fff!important}
+#gk-subnav ul li ul li a.active{background-position:0 top!important}
+/*
+ * Popups
+ */
+.gk_popup{position:absolute; right:0; margin:38px 4px 0 0; z-index:100; display:none; -moz-box-shadow:0 3px 10px #000; -webkit-box-shadow:0 3px 10px #000}
+.gk_popup_wrap{padding:18px; overflow:hidden; background:#3D4044 url('../images/top_bg.png') repeat-x 0 100%; color:#b5b5b5}
+.gk_hide{height:28px; position:absolute; right:0; margin:-32px 0 0 0; z-index:100; display:none}
+.gk_popup-hide{display:none; height:24px; padding:8px 0 0 5px; width:150px!important; line-height:28px; white-space:nowrap}
+.gk_popup_wrap .popup_col{float:left; width:auto; margin:0 0 0 20px}
+.gk_popup_wrap .popup_col:first-child{float:left; margin:0}
+.gk_popup_wrap td{white-space:nowrap}
+/*
+ * Gavick News Pro GK1 ------------------------------------------------------------------------
+ */
+  
+div.nsp{position:relative}
+div.gk_npro_mainwrap{border:none; padding:0}
+h4.gk_npro_header, 
+.gk_is_text_block h4{margin-bottom:6px; color:#333}
+h4.gk_npro_header a{color:#333}
+h4.gk_npro_header a:hover{color:#436284}
+img.gk_npro_image_static, 
+img.gk_npro_image{margin:0; border:none; padding:0}
+div.gk_npro_full_interface{position:absolute; right:16px; top:14px}
+div.gk_npro_full_interface ul{margin:0}
+div.gk_npro_full_interface ul li{border:none!important}
+.gk_npro_info{font-size:90%; margin:6px 0; color:#999}
+div.gk_npro_full_interface ul li, 
+div.gk_npro_full_interface ul li.active{background:url("../images/style1/nsp-interface.png") no-repeat 0 0; border:none!important; height:17px; margin-left:6px; width:11px}
+div.gk_npro_full_interface ul li.active{background-position:-11px 0}
+div.gk_npro_interface_bg{background:none; width:44px; height:17px; margin-left:16px; float:left}
+div.gk_npro_full_prev, 
+div.gk_npro_full_next, 
+div.gk_npro_full_prev:hover, 
+div.gk_npro_full_next:hover{background:url('../images/style1/nsp-interface.png') no-repeat -44px 0; width:22px; height:17px; margin:0}
+div.gk_npro_full_prev{background-position:-22px 0}
+div.gk_npro_full_prev:hover{background-position:-66px 0}
+div.gk_npro_full_next:hover{background-position:-88px 0}
+div.gk_npro_short_interface{margin:9px 0 0; padding-top:6px; font-size:90%; border-top:1px dotted #ddd}
+div.gk_npro_short_ulwrap ul{margin:0}
+div.gk_npro_short_ulwrap ul li{margin:0 0 5px 5px; border:none!important}
+div.gk_npro_short_ulwrap ul li h4, 
+div.gk_npro_short_ulwrap ul li h4 a{color:#333}
+div.gk_npro_short_ulwrap ul li p{color:#999; font-size:90%; margin:0}
+div.gk_npro_short_ulwrap ul li.even{background:#f6f6f6}
+div.gk_npro_short_ulwrap ul li.odd{background:#fff}
+div.gk_npro_short_ulwrap ul li:hover.even, 
+div.gk_npro_short_ulwrap ul li:hover.odd{background:#333}
+/* 
+ * Gavick News Pro GK1 
+ * Top section:_color1 moduletable 
+ */
+.moduletable_color1 div.gk_npro_mainwrap{color:#888}
+.moduletable_color1 h4.gk_npro_header a, 
+.moduletable_color1 h4.gk_npro_header, 
+.moduletable_color1 .gk_is_text_block h4{color:#fff}
+.moduletable_color1 h4.gk_npro_header a:hover{color:#ccc}
+.moduletable_color1 div.gk_npro_short_ulwrap ul li h4, 
+.moduletable_color1 div.gk_npro_short_ulwrap ul li h4 a{color:#ccc}
+.moduletable_color1 .gk_npro_info{color:#5d5d5d}
+.moduletable_color1 div.gk_npro_short_interface{border-top:1px dotted #333}
+.moduletable_color1 div.gk_npro_short_ulwrap ul li.even{background:#222}
+.moduletable_color1 div.gk_npro_short_ulwrap ul li.odd{background:#263546}
+.moduletable_color1 div.gk_npro_full_interface ul li, 
+.moduletable_color1 div.gk_npro_full_interface ul li.active{background-position:0 -17px}
+.moduletable_color1 div.gk_npro_full_interface ul li.active{background-position:-11px -17px}
+.moduletable_color1 div.gk_npro_full_prev, 
+.moduletable_color1 div.gk_npro_full_next, 
+.moduletable_color1 div.gk_npro_full_prev:hover, 
+.moduletable_color1 div.gk_npro_full_next:hover{background-position:-44px -17px}
+.moduletable_color1 div.gk_npro_full_prev{background-position:-22px -17px}
+.moduletable_color1 div.gk_npro_full_prev:hover{background-position:-66px -17px}
+.moduletable_color1 div.gk_npro_full_next:hover{background-position:-88px -17px}
+/* 
+ * Gavick News Pro GK1 
+ * Top section:_color2 moduletable 
+ */
+.moduletable_color2 div.gk_npro_mainwrap, 
+.moduletable_color2 .gk_npro_info, 
+.moduletable_color2 div.gk_npro_short_interface span{color:#c1ddfc}
+.moduletable_color2 h4.gk_npro_header a, 
+.moduletable_color1 h4.gk_npro_header, 
+.moduletable_color2 .gk_is_text_block h4{color:#fff}
+.moduletable_color2 div.gk_npro_short_ulwrap ul li h4, 
+.moduletable_color2 div.gk_npro_short_ulwrap ul li h4 a{color:#fff}
+.moduletable_color2 div.gk_npro_short_ulwrap ul li p{color:#a0bede}
+.moduletable_color2 div.gk_npro_short_interface{border-top:1px dotted #55769a}
+.moduletable_color2 div.gk_npro_short_ulwrap ul li.even{background:#3c5774}
+.moduletable_color2 div.gk_npro_short_ulwrap ul li.odd{background:#263546}
+
+.moduletable_color2 div.gk_npro_full_interface ul li, 
+.moduletable_color2 div.gk_npro_full_interface ul li.active{background-position:0 -34px}
+.moduletable_color2 div.gk_npro_full_interface ul li.active{background-position:-11px -34px}
+.moduletable_color2 div.gk_npro_full_prev, 
+.moduletable_color2 div.gk_npro_full_next, 
+.moduletable_color2 div.gk_npro_full_prev:hover, 
+.moduletable_color2 div.gk_npro_full_next:hover{background-position:-44px -34px}
+.moduletable_color2 div.gk_npro_full_prev{background-position:-22px -34px}
+.moduletable_color2 div.gk_npro_full_prev:hover{background-position:-66px -34px}
+.moduletable_color2 div.gk_npro_full_next:hover{background-position:-88px -34px}
+/* 
+ * Gavick News Pro GK1 
+ * Top section:nopadding moduletable 
+ */
+ 
+.nopadding h4.gk_npro_header, 
+.nopadding .gk_npro_text, 
+.nopadding .gk_npro_info, 
+.nopadding div.gk_npro_short_ulwrap ul, 
+.nopadding div.gk_npro_short_interface{padding:0 10px}
+/*
+ * Image Show - template style ------------------------------------------------------------------
+ */
+ 
+.gk_is_wrapper-style1{overflow:hidden; position:relative; background:#fff}
+.gk_is_wrapper-style1 .gk_is_image{display:block; position:relative; overflow:hidden}
+.gk_is_wrapper-style1 .gk_is_preloader{width:100%; height:100%; position:absolute; z-index:60; top:0; left:0; background:#fff url('../images/loader.gif') no-repeat center center}
+.gk_is_wrapper-style1 .gk_is_slide{position:absolute; left:0; top:0}
+.gk_is_prev, 
+.gk_is_next{width:34px; background:transparent url('../images/interface.png') no-repeat 0 0; height:32px; position:absolute; z-index:50; cursor:pointer; text-indent:-999em; margin:0}
+.gk_is_prev{background-position:0 -66px!important}
+.gk_is_next{background-position:0 -34px!important; margin:0 0 0 36px}
+.gk_is_text_block{line-height:1.9em}
+/*
+ * GK Tab
+ */
+.clearfix-tabs{clear:both}
+.gk_tab_item_space{padding:10px 0}
+div.gk_tab-style1{position:relative}
+div.gk_tab_wrap-style1{margin:0 auto}
+div.gk_tab-style1 div.gk_ul_wrap{height:45px}
+ul.gk_tab_ul-style1{background:url("../images/style1/module_titles.png") repeat-x scroll 0 -45px transparent; border-bottom:1px solid #FFF; height:44px; line-height:44px; text-shadow:1px 1px 1px #EEE; margin-top:0}
+.gk_tab_news_image{margin:5px}
+ul.gk_tab_ul-style1 li{float:left; width:auto; cursor:pointer; background:transparent url('../images/style1/tabs_left.png') no-repeat 0 -24px; height:24px; line-height:24px; padding:0 0 0 12px; font-size:90%; font-weight:bold; text-transform:uppercase; margin:10px 5px; border:none!important}
+ul.gk_tab_ul-style1 li span{background:transparent url('../images/style1/headings.png') no-repeat right -24px; padding:0 12px 0 0; display:block}
+ul.gk_tab_ul-style1 li:first-child{margin:10px 5px 10px 18px}
+ul.gk_tab_ul-style1 li.active, 
+ul.gk_tab_ul-style1 li:hover, 
+.moduletable_color1 ul.gk_tab_ul-style1 li:hover span, 
+.moduletable_color1 ul.gk_tab_ul-style1 li.active span{color:#4A729F!important}
+div.gk_tab_container0-style1{clear:both}
+div.gk_tab_container1-style1{overflow:hidden}
+div.gk_tab_item-style1{float:left; overflow:hidden; padding:0}
+h4.gk_tab_news_header{margin:6px 5px; font-size:110%; font-weight:bold}
+/* -- other styles -- */
+.moduletable_color1 ul.gk_tab_ul-style1{background:url("../images/style1/module_titles.png") repeat-x scroll 0 0 transparent; line-height:45px; height:45px; border-bottom:none!important; text-shadow:1px 1px 3px #000}
+.moduletable_color1 ul.gk_tab_ul-style1 li{background:transparent url('../images/style1/tabs_left.png') no-repeat 0 0}
+.moduletable_color1 ul.gk_tab_ul-style1 li span{background:transparent url('../images/style1/headings.png') no-repeat right 0; color:#fff}
+.moduletable_color2 ul.gk_tab_ul-style1{background:url("../images/style1/module_titles.png") repeat-x scroll 0 -90px transparent; line-height:45px; height:45px; border-bottom:none!important; text-shadow:1px 1px 3px #000}
+.moduletable_color2 ul.gk_tab_ul-style1 li{background:transparent url('../images/style1/tabs_left.png') no-repeat 0 -48px}
+.moduletable_color2 ul.gk_tab_ul-style1 li span{background:transparent url('../images/style1/headings.png') no-repeat right -48px; color:#fff}
+.moduletable_color2 ul.gk_tab_ul-style1 li.active span, 
+.moduletable_color2 ul.gk_tab_ul-style1 li:hover span{color:#C1DDFC!important; text-shadow:1px 1px 2px #243443}
+.gk_tab_item_space{padding:10px 10px 10px 5px}
+/*
+ * JComments - Latest Comments Module ------------------------------------------------------------------
+ */
+ul.jclist li, 
+ul.jclist_color1 li, 
+ul.jclist_color2 li, 
+ul.jclist_color3 li{border:1px dotted #ccc!important; background:#fff; margin-bottom:12px; padding:12px; font-size:90%; color:#999; margin-left:0 !important}
+ul.jclist img, 
+ul.jclist_color1 img, 
+ul.jclist_color2 img, 
+ul.jclist_color3 img{float:right; margin-left:6px; background:#fff; border-color:#F2F2F2 #F2F2F2 #D8D8D8; border-style:solid; border-width:1px; height:auto; padding:3px; width:42px}
+.jcl_comment{font-size:110%; color:#666}
+.jcl_objtitle{font-size:100%; background:#4A729F; padding:1px 4px; color:#fff!important}
+.jcl_date{font-size:90%; color:#222}
+/* 
+ * Module restrictions ----------------------------------------------------------------------------------------
+ */
+ 
+/* line from 741 */
+ul.jclist_color1 li{border:1px dotted #333!important; background:#000; color:#666}
+ul.jclist_color1 img{background:#000; border-color:#333}
+ul.jclist_color1 .jcl_comment{color:#999}
+ul.jclist_color2 li{border:1px dotted #5F80A5 !important; background:#304A67; color:#C1DDFC}
+ul.jclist_color2 img{background:#304A67; border-color:#436284}
+ul.jclist_color2 .jcl_comment{color:#fff}
+ul.jclist_color3 li{background:#f9f9f9}
